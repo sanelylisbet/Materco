@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            padding-top: 130px; /* Espacio para header y nav */
+        }
+
+        header {
+            background-color: #929292;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header img {
+            max-width: 100px; /* Ajusta este valor según el tamaño de tu logo */
+            height: auto;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1rem 0; /* Aumenta el tamaño de la barra de navegación */
+            position: fixed;
+            top: 70px; /* Ajusta según la altura del header */
+            width: 100%;
+            z-index: 999;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Mantén los elementos del menú centrados */
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 10px; /* Espaciado entre elementos del menú */
+        }
+
+        nav ul li a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+            list-style: none;
+            z-index: 1000;
+        }
+
+        nav ul li ul li a {
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+            background-image: url('imagen de fondo.JPEG'); /* Cambia 'imagen de fondo.JPEG' al nombre de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 400px; /* Ajusta la altura mínima según tus necesidades */
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #2b3181; /* Cambia este valor al color que prefieras */
+            margin-bottom: 1rem;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        .gallery img {
+            margin: 10px;
+            max-width: 300px; /* Ajusta el tamaño máximo de las imágenes */
+            height: auto;
+        }
+
+        .large-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .large-image img {
+            max-width: 80%; /* Ajusta el tamaño máximo de la imagen grande */
+            height: auto;
+        }
+
+        .footer-text {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            clear: both; /* Limpiar flotantes */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="MATERCO LOGO.png" alt="Logo de la Empresa">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="#">Productos</a>
+                <ul>
+                    <li><a href="#">Producto 1</a></li>
+                    <li><a href="#">Producto 2</a></li>
+                    <li><a href="#">Producto 3</a></li>
+                </ul>
+            </li>
+            <li><a href="CONTACTO.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Contenido principal sin los textos eliminados -->
+        <div class="section-title">Galería de Imágenes</div>
+        <div class="gallery">
+            <img src="imagen 1.jpeg" alt="Imagen 1">
+            <img src="imagen 2.jpeg" alt="Imagen 2">
+            <img src="imagen 3.jpeg" alt="Imagen 3">
+        </div>
+        <div class="section-title">Imagen Destacada</div>
+        <div class="large-image">
+            <img src="GRANI.jpeg" alt="Imagen Grande">
+        </div>
+    </main>
+    <div class="footer-text">
+        Este es el texto adicional al final de la página. Puedes colocar aquí cualquier información relevante.
+    </div>
+    <footer>
+        <p>&copy; 2024 MA @sanelylisbet</p>
+    </footer>
+</body>
+</html>

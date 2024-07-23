@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #929292;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 500;
+        }
+
+        header img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            position: fixed;
+            top: 100px;
+            width: 100%;
+            z-index: 500;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li ul li a {
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        main {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12rem 0;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            max-width: 90%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 1rem;
+            max-width: 300px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 0.5rem 0;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: #666;
+            margin: 0.5rem 0;
+        }
+
+        .buy-button {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .buy-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;   
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="MATERCO LOGO.png" alt="Logo de la Empresa">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+
+            <li><a href="CONTACTO.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="overlay">
+            <div class="products">
+                <div class="product">
+                    <img src="cubeta1.jpeg" alt="Producto 1">
+                    <div class="product-name">GRANIPLAS</div>
+                    <div class="product-price">1,850.0</div>
+                    <a href="formulario.html" class="buy-button">Comprar</a>
+                </div>
+                <div class="product">
+                    <img src="cubeta2.jpeg" alt="Producto 2">
+                    <div class="product-name">IMPERMEABILIZANTE</div>
+                    <div class="product-price">4,500.0</div>
+                    <a href="formulario.html" class="buy-button">Comprar</a>
+                </div>
+                <div class="product">
+                    <img src="cubete7.png" alt="Producto 3">
+                    <div class="product-name">PINTURA SUPER ECO</div>
+                    <div class="product-price">3,500.0</div>
+                    <a href="formulario.html" class="buy-button">Comprar</a>
+                </div>
+                <div class="product">
+                    <img src="cubeta8.png" alt="Producto 4">
+                    <div class="product-name">ESTUCO ACRILICO</div>
+                    <div class="product-price">1,350.0</div>
+                    <a href="formulario.html" class="buy-button">Comprar</a>
+                </div>
+                <div class="product">
+                    <img src="cubeta9.png" alt="Producto 5">
+                    <div class="product-name">PINTURA SUPER PLUS</div>
+                    <div class="product-price">3,500.0</div>
+                    <a href="formulario.html" class="buy-button">Comprar</a>
+                </div>
+                <div class="product">
+                    <img src="cubeta11.jpeg" alt="Producto 6">
+                    <div class="product-name">IMPERMEABILIZANTE CEMENTICIO </div>
+                    <div class="product-price">4,500.0</div>
+                    <a href="formulario.html" class="buy-button">Comprar</a>
+                </div>
+               
+              
+                
+                <!-- Agregar más productos según sea necesario -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Materco @sanelylisbet</p>
+    </footer>
+</body>
+</html>

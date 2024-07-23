@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud de Servicios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #929292;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 500;
+        }
+
+        header img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            position: fixed;
+            top: 100px;
+            width: 100%;
+            z-index: 500;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li ul li a {
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        main {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12rem 0;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .form-container h2 {
+            margin-bottom: 1rem;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container label {
+            text-align: left;
+            margin: 0.5rem 0;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .form-container button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="MATERCO LOGO.png" alt="Logo de la Empresa">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="producto.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="form-container">
+            <h2>Formulario de Solicitud de Servicios</h2>
+            <form id="serviceForm">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="service">Servicio Solicitado:</label>
+                <textarea id="service" name="service" rows="4" required></textarea>
+                
+                <label for="details">Detalles Adicionales:</label>
+                <textarea id="details" name="details" rows="4"></textarea>
+                
+                <button type="button" onclick="submitForm()">Enviar Solicitud</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Materco @sanelylisbet</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const details = document.getElementById('details').value;
+
+            const message = `Nombre: ${name}%0ACorreo Electrónico: ${email}%0ATeléfono: ${phone}%0AServicio Solicitado: ${service}%0ADetalles Adicionales: ${details}`;
+            
+            // Reemplaza '1234567890' con tu número de teléfono en formato internacional
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=18494275457&text=${message}`;
+            
+            // Abre el enlace de WhatsApp
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>

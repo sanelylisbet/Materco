@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #929292;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 500;
+        }
+
+        header img {
+            max-width: 100px; /* Ajusta este valor según el tamaño de tu logo */
+            height: auto;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            position: fixed;
+            top: 100px; /* Ajusta según la altura del header */
+            width: 100%;
+            z-index: 500;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li ul li a {
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        main {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+    
+        .overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    max-width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Cambia aquí el color rojo a tu preferencia */
+}
+
+
+        .contact-info {
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-media img {
+            width: 30px; /* Tamaño ajustado para íconos más pequeños */
+            height: 30px;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;   
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="MATERCO LOGO.png" alt="Logo de la Empresa">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="producto.html">Productos</a>
+                <li><a href="servicios.html">Servicios</a></li>
+
+                
+                    
+            </li>
+        
+        </ul>
+    </nav>
+    <main>
+        <div class="overlay">
+            <div class="contact-info">
+                <h2>HAS CLIC </h2>
+                <p>SOBRE LA RED SOCIAL QUE DESEAS CONTACTARNOS</p>
+                <p>Disponibles las 24 horas del dia.</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/eduardo.deleon.908579" target="_blank">
+                        <img src="face.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="xxx.jpg" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/materco8" target="_blank">
+                        <img src="intt.jpg" alt="Instagram">
+                    </a>
+                    </a>
+                    <a href="https://wa.me/message/K5DM3B2BDGKKN1" target="https://wa.me/message/K5DM3B2BDGKKN1">
+                        <img src="icono-whatsapp-3004-GRIS.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Materco @sanelylisbet</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #929292;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 500;
+        }
+
+        header img {
+            max-width: 90px; /* Ajusta este valor según el tamaño de tu logo */
+            height: auto;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            position: fixed;
+            top: 100px; /* Ajusta según la altura del header */
+            width: 100%;
+            z-index: 500;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {   
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li ul li a {
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        main {
+            padding: 12rem;
+            text-align: center;
+            background-image: url('imagen de fondo.JPEG'); /* Cambia 'imagen_de_fondo.JPEG' al nombre de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 600px; /* Ajusta la altura mínima según tus necesidades */
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #383838; /* Cambia este valor al color que prefieras */
+            padding-top: 2rem; /* Ajusta el margen superior para colocar el texto más abajo */
+            font-weight: 900; /* Negrita */
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        .gallery img {
+            margin: 10px;
+            max-width: 300px; /* Ajusta el tamaño máximo de las imágenes */
+            height: auto;
+        }
+
+        .large-image {
+            width: 100%; /* Extiende la imagen a todo el ancho */
+        }
+
+        .large-image img {
+            width: 100%; /* Extiende la imagen a todo el ancho */
+            height: auto;
+        }
+
+        .footer-text {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: 700; /* Negrita */
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="MATERCO LOGO.png" alt="Logo de la Empresa">
+    </header>
+    <nav>
+        <ul>
+            
+            <li><a href="producto.html">Productos</a>
+                <li><a href="servicios.html">Servicios</a></li>
+
+                
+            </li>
+            <li><a href="CONTACTO.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Contenido principal sin los textos eliminados -->
+    </main>
+   
+    <div class="gallery">
+        <img src="imagen 1.jpeg" alt="Imagen 1">
+        <img src="imagen 2.jpeg" alt="Imagen 2">
+        <img src="imagen 3.jpeg" alt="Imagen 3">
+    </div>
+    <div class="section-title">Conoce mas...</div>
+    <div class="large-image">
+        <img src="GRANI.jpeg" alt="Imagen Grande">
+    </div>
+    
+    <div class="footer-text">
+       
+    </div>
+    <footer>
+        <p>&copy; 2024 Materco @sanelylisbet</p>
+    </footer>
+</body>
+</html>
